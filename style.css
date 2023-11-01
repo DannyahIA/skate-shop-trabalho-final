@@ -87,14 +87,31 @@ nav img
 }
 
 .hero-btn {
+    /* inline block button */
     display: inline-block;
+
+    /* remove text underline */
     text-decoration: none;
+
+    /* set button text color */
     color: #F8DE22;
+
+    /* set button border */
     border: 1px solid #F8DE22;
+
+    /* set button padding */
     padding: 12px 34px;
+
+    /* set button font size */
     font-size: 13px;
+
+    /* set button background color */
     background: transparent;
+
+    /* set button position */
     position: relative;
+
+    /* set button cursor style */
     cursor: pointer;
 }
 
