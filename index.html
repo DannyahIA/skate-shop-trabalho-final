@@ -1,13 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+|<!DOCTYPE html>
+<html lang="en">
     <head>
-        <!-- Definições básicas do documento -->
+        <!-- Definições básicas -->
         <meta charset="UTF-8">
-        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ollie POP Shop</title>
 
-        <!-- Importação do arquivo CSS -->
-        <link rel="stylesheet" href="css/style.css">
+        <!-- Immportação do arquivo CSS -->
+        <link rel="stylesheet" href="../css/style.css">
 
         <!-- Importação da fonte Poppins do Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,142 +15,112 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        <!-- Seção do cabeçalho -->
-        <section class="header">
+        <!-- Seção do header -->
+        <section class="cabeçalho">
             <!-- Navegação do site -->
             <nav>
-                <a href="index.html"><img src="assets/logo.jpg">
-                <div class="nav-links">
+                <img src="../assets/icons/logo.jpg">
+                <div class="barra_de_pesquisa">
+                    <input type="text" placeholder="Pesquisar...">
+                    <button type="button">
+                        <img src="../assets/icons/lupa.png" alt="PERFIL">
+                    </button>
+                </div>
+                <div class="barra_de_navegação">
                     <!-- Lista de links de navegação -->
                     <ul>
-                        <li><a href="Pag1.html">INÍCIO</a></li>
-                        <li><a href="Pag1.html">SOBRE</a></li>
-                        <li><a href="Pag1.html">CONTATO</a></li>
-                        <li><a href="cadastro.login.html#login">ENTRAR</a></li>
-                        <li><a href="cadastro.login.html#signup">CADASTRAR-SE</a></li>
+                        <li>
+                            <a href="Primeira Pagina.html">CATEGORIAS</a>
+                        </li>
+                        <li>
+                            <a href="cadastro.login.html#login">
+                                <button type="button">
+                                    <img src="../assets/icons/user.jpg" alt="PERFIL">
+                                </button>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="carrinho_de_compras.html">
+                                <button type="button">
+                                    <img src="../assets/icons/carrinho_de_compras.jpg" alt="CARRINHO">
+                                </button>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
-        </section>
-        <!-- Seção de produtos -->
-        <section class="produtos">
-        <h1>O que oferecemos?</h1>
+        </section> 
         
-        <!-- Lista de produtos -->
-        <div class="lista-de-produtos">
-            
-            <!-- Linhas de produtos -->
-            <div class="row">
-
-                <!-- Item de produto -->
-                <div class="produtos-item">
-                    <img src="assets/kitpecasskate.webp" alt="Kit">
-                    <h3>Kit Peças Santa Cruz</h3>
-                    <p>Conjunto de peças Santa Cruz.</p>
-                    <p>Preço: R$ 499,90</p>
-                    <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
+        <!-- Seção dos destaques -->
+        <section class="destaques">
+            <div class="carrossel-container">
+                <div class="carrossel">
+                    <div class="slide">
+                        <img src="../assets/destaques/destaque_exemplo_1.webp" alt="destaque_1">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/destaques/destaque_exemplo_2.webp" alt="destaque_2">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/destaques/destaque_exemplo_3.webp" alt="destaque_3">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/destaques/destaque_exemplo_4.webp" alt="destaque_4">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/destaques/destaque_exemplo_5.webp" alt="destaque_5">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/destaques/destaque_exemplo_6.webp" alt="destaque_6">
+                    </div>
+                    <div class="slide">
+                        <img src="../assets/destaques/destaque_exemplo_7.webp" alt="destaque_7">
+                    </div>
                 </div>
+                <div class="indicadores"></div>
+            </div>
+        </section>
+        
+        <div class="categorias_div">
+            <h1>CATEGORIAS</h1>
+        </div>
 
-                    <div class="produtos-item">
-                        <img src="assets/camiseta1.webp" alt="Camiseta">
-                        <h3>CAMISETA ADIDAS</h3>
-                        <p>SHMOO ART SS BLACK</p>
-                        <p>Preço: R$ 199,90</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
+        <section class="categorias">
+            <div class="categorias-container">
+                <div class="categoria" id="categoria_roupas">
+                    <img src="../assets/categorias/categoria_roupas.jpg" alt="Roupas">
+                    <div class="conteudo">
+                        <h1>ROUPAS</h1>
                     </div>
-
-                    <div class="produtos-item">
-                        <img src="assets/tenis1.webp" alt="Tenis">
-                        <h3>TÊNIS ADIDAS</h3>
-                        <p>Busenitz Vulc II BLK/YEL/WHT</p>
-                        <p>Preço: R$ 599,90</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
+                </div>
+                <div class="categoria" id="categoria_shapes">
+                    <img src="../assets/categorias/categoria_shapes.jpg" alt="Shapes">
+                    <div class="conteudo">
+                        <h1>SHAPES</h1>
                     </div>
-
-                    <div class="produtos-item">
-                        <img src="assets/blusa1.webp" alt="Blusa">
-                        <h3>Jaqueta Adidas</h3>
-                        <p>SHMOO Bomber Black</p>
-                        <p>Preço: R$ 999,90</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
+                </div>
+                <div class="categoria" id="categoria_tenis">
+                    <img src="../assets/categorias/categoria_tenis.jpg" alt="Tênis">
+                    <div class="conteudo">
+                        <h1>TÊNIS</h1>
                     </div>
-
-                    <div class="produtos-item">
-                        <img src="assets/shape.avif" alt="Shape">
-                        <h3>Shape Plan B</h3>
-                        <p>"Pontilhado Colorido" 8.0</p>
-                        <p>Preço: R$ 439,00</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
+                </div>
+                <div class="categoria" id="categoria_bones">
+                    <img src="../assets/categorias/categoria_bones.jpg" alt="Bonés">
+                    <div class="conteudo">
+                        <h1>BONÉS</h1>
                     </div>
-
-                    <div class="produtos-item">
-                        <img src="assets/railround.avif" alt="Rail">
-                        <h3>Rail Round</h3>
-                        <p>New Inove</p>
-                        <p>Preço: R$ 149,90</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
-                    </div>
-
-                    <div class="produtos-item">
-                        <img src="assets/kitpecasskate.webp" alt="Kit">
-                        <h3>Kit Peças Santa Cruz</h3>
-                        <p>Conjunto de peças Santa Cruz.</p>
-                        <p>Preço: R$ 499,90</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
-                    </div>
-                    
-                    <div class="produtos-item">
-                        <img src="assets/camiseta1.webp" alt="Camiseta">
-                        <h3>CAMISETA ADIDAS</h3>
-                        <p>SHMOO ART SS BLACK</p>
-                        <p>Preço: R$ 199,90</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
-                    </div>
-
-                    <div class="produtos-item">
-                        <img src="assets/tenis1.webp" alt="Tenis">
-                        <h3>TÊNIS ADIDAS</h3>
-                        <p>Busenitz Vulc II BLK/YEL/WHT</p>
-                        <p>Preço: R$ 599,90</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
-                    </div>
-
-                    <div class="produtos-item">
-                        <img src="assets/blusa1.webp" alt="Blusa">
-                        <h3>Jaqueta Adidas</h3>
-                        <p>SHMOO Bomber Black</p>
-                        <p>Preço: R$ 999,90</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
-                    </div>
-
-                    <div class="produtos-item">
-                        <img src="assets/shape.avif" alt="Shape">
-                        <h3>Shape Plan B</h3>
-                        <p>"Pontilhado Colorido" 8.0</p>
-                        <p>Preço: R$ 439,00</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
-                    </div>
-
-                    <div class="produtos-item">
-                        <img src="assets/railround.avif" alt="Rail">
-                        <h3>Rail Round</h3>
-                        <p>New Inove</p>
-                        <p>Preço: R$ 149,90</p>
-                        <button class="adicionar-ao-carrinho-botao">Adicionar ao Carrinho</button> 
-                    </div>
-
                 </div>
             </div>
         </section>
 
-        <!-- Seção de filiais -->
         <section class="filiais">
-            <h1>Nossas Filiais:</h1>
+            <h1>NOSSAS FILIAIS</h1>
             <!-- Container de filiais -->
             <div class="filiais-container">
                 <!-- Item de filial -->
                 <div class="filiais-item">
-                    <img src="assets/curitiba.webp" alt="Filiais Curitiba">
+                    <img src="../assets/filiais/filial_curitiba.webp" alt="Filiais Curitiba">
                     <div class="filiais-info">
                         <h3>Curitiba</h3>
                         <p>Avenida Cândido de Abreu, 776 - Centro Cívico, Curitiba - PR, 80530-000, Brasil</p>
@@ -158,7 +128,7 @@
                 </div>
         
                 <div class="filiais-item">
-                    <img src="assets/sjp.jpg" alt="Filiais São José dos Pinhais">
+                    <img src="../assets/filiais/filial_são_josé_dos_pinhais.jpg" alt="Filiais São José dos Pinhais">
                     <div class="filiais-info">
                         <h3>São José dos Pinhais</h3>
                         <p>Rua XV de Novembro, 1755 - Centro, São José dos Pinhais - PR, 83005-000, Brasil</p>
@@ -166,17 +136,15 @@
                 </div>
         
                 <div class="filiais-item">
-                    <img src="assets/centrocivico.jpg" alt="Filiais Centro Cívico">
+                    <img src="../assets/filiais/filial_centro_civico.webp" alt="Filiais Centro Cívico">
                     <div class="filiais-info">
                         <h3>Centro Cívico</h3>
                         <p>Rua Cândido Lopes, 102 - Centro Cívico, Curitiba - PR, 80530-000, Brasil</p>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- Importação do arquivo JavaScript -->
-        <script src="javascript/script.js"></script>
+        <script src="../javascript/script.js"></script>
     </body>
 </html>
