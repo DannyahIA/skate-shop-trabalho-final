@@ -45,19 +45,19 @@ document.addEventListener("DOMContentLoaded", function () {
 /* -------------------------- CATEGORIAS -------------------------- */
 
 document.getElementById("categoria_roupas").addEventListener("click", function() {
-    window.location.href = "categoria_roupas.html";
+    window.location.href = "./pages/categoria_roupas.html";
 });
 
 document.getElementById("categoria_shapes").addEventListener("click", function() {
-    window.location.href = "categoria_shapes.html";
+    window.location.href = "./pages/categoria_shapes.html";
 });
 
 document.getElementById("categoria_tenis").addEventListener("click", function() {
-    window.location.href = "categoria_tenis.html";
+    window.location.href = "./pages/categoria_tenis.html";
 });
 
 document.getElementById("categoria_bones").addEventListener("click", function() {
-    window.location.href = "categoria_bones.html";
+    window.location.href = "./pages/categoria_bones.html";
 });
 
 /* -------------------------- CADASTRO/LOGIN -------------------------- */
